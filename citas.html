@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO - GRUPO INTEGRUM</title>
+    
+    <style>
+        /* Estilos Base y Tipografía */
+        body {
+            font-family: 'Arial', sans-serif; 
+            color: #342807; 
+            background-color: #E2DCCB; 
+            margin: 0;
+            padding: 0;
+            line-height: 1.6; 
+        }
+        
+        h1, h2, h3 {
+            color: #B28507; 
+            text-align: center;
+        }
+
+        /* Encabezado Principal */
+        .main-header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #ffffff; 
+            border-bottom: 5px solid #B28507;
+        }
+
+        .logo {
+            max-width: 120px;
+            height: auto;
+            border-radius: 50%; 
+            margin-bottom: 10px;
+        }
+
+        .main-header p {
+            font-style: italic;
+            font-size: 1.1em;
+        }
+
+        /* Navegación */
+        .main-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; 
+            justify-content: center;
+            background-color: #342807; 
+        }
+
+        .main-nav li a {
+            display: block;
+            padding: 15px 25px;
+            text-decoration: none;
+            color: #E2DCCB; 
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .main-nav li a:hover {
+            background-color: #B28507;
+            color: #ffffff;
+        }
+
+        /* Contenido Principal */
+        .content-section {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px 40px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            padding: 20px 0;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        /* Estilos de Lista (Beneficios) */
+        .benefit-list {
+            list-style-type: none; 
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .benefit-list li {
+            background-color: #fff8f0;
+            border-left: 5px solid #B28507;
+            padding: 15px;
+            margin: 10px;
+            width: calc(50% - 40px); 
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .benefit-list strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+        
+        /* Estilos del Diagrama (Enfoque) */
+        .diagram-container { 
+            text-align: center; 
+            padding: 20px; 
+            margin: 20px auto; 
+            display: flex; 
+            justify-content: space-around; 
+            align-items: flex-start;
+            flex-wrap: wrap; 
+        }
+
+        .diagram-item { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding: 15px; 
+            border: 1px solid #B28507; 
+            border-radius: 8px; 
+            background-color: #fffaf0; 
+            width: 30%; 
+            margin-bottom: 20px;
+        }
+        
+        .diagram-item img { 
+            width: 100px; 
+            height: 100px; 
+            margin-bottom: 10px; 
+        }
+
+        /* Estilos de Botones */
+        .cta-button { 
+            background-color: #B28507;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: #8c6a06;
+        }
+
+        /* Pie de Página */
+        .main-footer {
+            text-align: center;
+            padding: 25px 0;
+            background-color: #342807;
+            color: #E2DCCB;
+            font-size: 0.9em;
+        }
+
+        .footer-nav a {
+            color: #E2DCCB;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .copyright a {
+            color: #fff4e2;
+        }
+
+        /* Media Queries para Responsividad (Movil) */
+        @media (max-width: 768px) {
+            .content-section {
+                width: 95%;
+                padding: 15px;
+            }
+
+            .main-nav ul {
+                flex-direction: column; 
+            }
+
+            .benefit-list li {
+                width: 100%; 
+                margin: 5px 0;
+            }
+            
+            .diagram-container {
+                flex-direction: column; 
+                gap: 10px;
+            }
+            .diagram-item {
+                width: 90%;
+            }
+        }
+    </style>
+    </head>
+<body>
+    <header class="main-header">
+        <img src="IMAGENES/logo.jpg" alt="Logo Grupo Integrum" class="logo">
+        <h1>GRUPO INTEGRUM</h1>
+        <p>Juntos construimos equilibrio: Legal, Emocional y Social</p>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index2.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="citas.html">Citas</a></li>
+            <li><a href="seguimiento.html">Seguimiento</a></li>
+            <li><a href="contactanos.html">Contáctanos</a></li>
+        </ul>
+    </nav>
+    
+    <main class="content-section">
+        
+        <section class="welcome-section">
+            <h2>Bienvenidos a Grupo Integrum</h2>
+            <p>
+                En nuestro bufete integramos la experiencia jurídica con el acompañamiento psicológico y social, 
+                ofreciendo soluciones integrales a las necesidades de nuestros clientes. Creemos en una atención humana, 
+                ética y comprometida con la transformación positiva de cada caso y de cada persona.
+            </p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="IMAGENES/Legal.jpg" alt="Escena legal con balanza" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 15px;">
+                <img src="IMAGENES/f061e40a0a1a8547cb8f80119845841b_w200.gif" alt="Animación de balanza legal y libros" style="max-width: 150px; height: auto;">
+            </div>
+        </section>
+
+        <section class="diagram-section">
+            <h3>Nuestro Enfoque de Equilibrio</h3>
+            <p style="text-align: center;">
+                Utilizamos una metodología de tres pilares que se integran en el centro de tu bienestar.
+            </p>
+            <div class="diagram-container">
+                <div class="diagram-item">
+                    <img src="IMAGENES/LEGAL.png" alt="Pilar Legal">
+                    <strong>Legal</strong>
+                    <p>Asesoría y representación jurídica sólida.</p>
+                </div>
+                <div class="diagram-item">
+                    <img src="IMAGENES/EMOCIONAL.png" alt="Pilar Emocional">
+                    <strong>Emocional</strong>
+                    <p>Acompañamiento psicológico para el manejo del cambio.</p>
+                </div>
+                <div class="diagram-item">
+                    <img src="IMAGENES/SOCIAL.png" alt="Pilar Social">
+                    <strong>Social</strong>
+                    <p>Estrategias para la reintegración y redes de apoyo.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="servicios.html" class="cta-button">Ver Nuestros Servicios</a>
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <h2>¿Qué Obtienes con Grupo Integrum?</h2>
+            <ul class="benefit-list">
+                <li>
+                    <strong>Atención Integral</strong>
+                    Un solo equipo multidisciplinario para tus necesidades legales, psicológicas y sociales.
+                </li>
+                <li>
+                    <strong>Ética y Transparencia</strong>
+                    Compromiso con la honestidad y claridad en cada etapa del proceso.
+                </li>
+                <li>
+                    <strong>Soluciones Personalizadas</strong>
+                    Estrategias diseñadas específicamente para la singularidad de tu caso.
+                </li>
+                <li>
+                    <strong>Transformación Positiva</strong>
+                    Nuestro objetivo va más allá de lo legal: buscamos tu bienestar a largo plazo.
+                </li>
+            </ul>
+        </section>
+        
+        <section class="cta-actions" style="text-align: center;">
+            <p><strong>¿Necesitas una cita o saber el estado de tu trámite?</strong></p>
+            <a href="citas.html" class="cta-button" style="margin-right: 15px;">Pedir una Cita</a>
+            <a href="seguimiento.html" class="cta-button">Consultar Seguimiento</a>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <nav class="footer-nav">
+            <a href="index2.html">Inicio</a> | 
+            <a href="servicios.html">Servicios</a> | 
+            <a href="contactanos.html">Contáctanos</a>
+        </nav>
+        <p class="copyright">Copyright 2025 Grupo Integrum. Envíanos un mensaje vía email a <a href="mailto:Info@grupoIntegrum.co">Info@grupoIntegrum.co</a></p>
+    </footer>
+</body>
+</html>
